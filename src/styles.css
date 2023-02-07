@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Roboto Slab';
+}  
+
+.container
+{
+    height:80vh;
+    width:36vw;
+    border:20px solid black;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+   align-items: center;
+   justify-content: space-around;
+   background-color: rgb(240, 236, 236);
+}
+
+.title h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+.dice_container{
+    display:grid;
+    gap: 20px;
+    grid-template-columns:repeat(5,1fr);
+    margin: 30px;
+
+}
+.count{
+    font-weight: 600;
+    font-size: 20px;
+}
+.die_face{
+
+    height:50px;
+    width:60px;
+    padding:6px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border:none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    font-family:'Roboto Slab';
+     
+    
+}
+.footerbtn_container
+{
+    margin:10px;
+}
+.btn{
+    width:150px;
+    height:50px;
+    border-radius: 10px;
+    bottom: 20px;
+    border:none;
+    background-color: blue;
+    color: white;
+    font-size: 1.2rem;
+    font-family:'Roboto Slab';
+    
+}
+
+.roll_btn:focus{
+    outline:none;
+}
+
+.roll_btn:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
