@@ -23,9 +23,9 @@ body
     display: flex;
     flex-direction: column;
     line-height: 30px;
-   align-items: center;
-   justify-content: space-around;
-   background-color: rgb(240, 236, 236);
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(240, 236, 236);
 }
 
 .title h2{
@@ -86,4 +86,45 @@ body
 
 .roll_btn:active {
     box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+
+@media screen and (max-width:480px) {
+    .container{
+        width:340px;
+        height: 500px;
+        margin:0px;
+    }
+    
+.title h2{
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.dice_container{
+    display:grid;
+    gap: 20px;
+    grid-template-columns:repeat(5,1fr);
+    margin: 20px;
+
+}
+.count{
+    font-weight: 600;
+    font-size: 18px;
+}
+.die_face{
+
+    height:40px;
+    width:40px;
+    padding:6px;   
+    font-size: 1rem;    
+}
+.btn{
+    width:120px;
+    height:40px;
+    font-size: 1rem;
+   
+    
+}
 }
