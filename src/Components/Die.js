@@ -8,11 +8,9 @@ const Die = ({id,value,isHeld,dice,setDice}) => {
         {
                 const update_holded=dice.map((die)=> {return die.id===id ?  {...die,isHeld:!isHeld} :die}) 
                 setDice(update_holded)
-                //console.log(update_holded)
-                
+                //console.log(update_holded)                
         }
         
-
        /****  STYLES  ******/
       
         const styles=
@@ -20,7 +18,7 @@ const Die = ({id,value,isHeld,dice,setDice}) => {
         backgroundColor:(isHeld===true? 'green' : 'white' )                 // change style based on isHeld //
         }
           
-return (
+        return (
             <>    
                  <button className='die_face' style={styles} onClick={()=>holdDice(id)}>{value}</button>            
                         
